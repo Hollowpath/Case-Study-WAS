@@ -5,9 +5,9 @@
 Welcome to the GitHub repository for the INFO 4345 case study on Indah Water Konsortium (IWK). This document contains the detailed breakdown of contributions from each team member.
 
 ### Group Members:
-- [Bashir Md Monjur](GitHub Profile URL) (Matric Number: 2028113)
-- [Wan Mohd Nazim Bin Wan Muhamad Saidin](GitHub Profile URL) (Matric Number: 2114261)
-- [Faizal Akhtar Bin Azhar](GitHub Profile URL) (Matric Number: 2124565) - Group Leader
+- Bashir Md Monjur (2028113)
+- Wan Mohd Nazim Bin Wan Muhamad Saidin (2114261)
+- Faizal Akhtar Bin Azhar (2124565) - Group Leader
 
 ### Work Distribution:
 
