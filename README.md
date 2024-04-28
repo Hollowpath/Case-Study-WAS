@@ -89,5 +89,27 @@ This comprehensive analysis helps us to understand the security posture of the I
 ## Prevent Vulnerabilities:
 [Recommendations and measures to prevent the identified vulnerabilities.]
 
-## References:
-[List any references used in the report.]
+## References
+
+1. **OWASP ZAP Official Documentation:** Provides detailed information about OWASP ZAP, including user guides, tutorials, and technical documentation.
+   - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/)
+
+2. **OWASP Top 10:** OWASP's list of the top 10 most critical web application security risks. Understanding these risks can help identify vulnerabilities and improve security posture.
+   - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+
+3. **OWASP Testing Guide:** A comprehensive guide to testing the security of web applications. It covers various testing techniques and methodologies.
+   - [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+
+4. **Burp Suite Documentation:** Burp Suite is another popular web vulnerability scanner and security testing tool. Its documentation provides guidance on using the tool effectively.
+   - [Burp Suite Documentation](https://portswigger.net/burp/documentation)
+
+5. **Kali Linux Official Documentation:** Kali Linux is a popular Linux distribution used by security professionals and contains numerous security tools, including those for vulnerability scanning.
+   - [Kali Linux Documentation](https://www.kali.org/docs/)
+
+6. **NIST Special Publication 800-115:** Provides guidelines for information security testing and assessment.
+   - [NIST SP 800-115](https://csrc.nist.gov/publications/detail/sp/800-115/final)
+
+7. **WASC Threat Classification:** Offers a classification of web application security threats to help understand and address different types of vulnerabilities.
+   - [WASC Threat Classification](http://projects.webappsec.org/w/page/13246938/Threat%20Classification%20-%20WASC%20TCv2)
+
+8. [Detailed ZAP Scanning Report](https://drive.google.com/file/d/1qiC6JscSML1rPOu_M7OEpNdwWsGeF6FQ/view?usp=sharing)
