@@ -92,6 +92,6 @@ This comprehensive analysis helps us to understand the security posture of the I
 ## References
 
 1. **OWASP ZAP Official Documentation:** Provides detailed information about OWASP ZAP, including user guides, tutorials, and technical documentation.
-   - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/){:target="_blank"}
+   - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/)
 
-2. [Detailed ZAP Scanning Report](https://drive.google.com/file/d/1qiC6JscSML1rPOu_M7OEpNdwWsGeF6FQ/view?usp=sharing){:target="_blank"}
+2. [Detailed ZAP Scanning Report](https://drive.google.com/file/d/1qiC6JscSML1rPOu_M7OEpNdwWsGeF6FQ/view?usp=sharing)
