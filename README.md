@@ -32,7 +32,56 @@ Established in 1994, IWK plays a crucial role in managing the nation's sewerage 
 The objectives of this case study are to identify, evaluate, and prevent vulnerabilities present within the IWK website, using the OWASP ZAP tool and other relevant techniques. Through comprehensive analysis and recommendations, the aim is to enhance the security and integrity of the IWK online platform, safeguarding it against potential threats and ensuring uninterrupted service delivery to the public.
 
 ## Identify Vulnerabilities:
-[List the vulnerabilities identified in the Indah Water Konsortium (IWK) website.]
+The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
+
+### Medium Risk:
+- **CSP: Wildcard Directive**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Content Security Policy (CSP) implements a wildcard directive, which can allow malicious content to be executed.
+- **CSP: script-src unsafe-inline**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: CSP policy allows unsafe inline scripts, increasing the risk of XSS attacks.
+- **CSP: style-src unsafe-inline**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Inline styles are enabled, which can be exploited for malicious purposes.
+- **Cross-Domain Misconfiguration**
+  - **URL**: `https://fonts.googleapis.com/css?family=Roboto:100,400,500`
+  - **Details**: Misconfigured CORS policy that could be exploited to leak information.
+- **Secure Pages Include Mixed Content**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Mixed content found, where secure pages include resources from insecure sources.
+- **Vulnerable JS Library**
+  - **URL**: `https://www.iwk.com.my/compiledjs/jquery-1-9631852.js`
+  - **Details**: Use of an outdated JavaScript library with known vulnerabilities.
+- **Absence of Anti-CSRF Tokens**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: No CSRF tokens were found, which can lead to cross-site request forgery attacks.
+
+### Low Risk:
+- **Strict-Transport-Security Header Not Set**
+  - **URL**: `https://www.statcounter.com/counter/counter.js`
+  - **Details**: The Strict-Transport-Security header is not set, which can make the site more susceptible to man-in-the-middle attacks.
+- **Server Leaks Version Information via "Server" HTTP Response Header Field**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Server version information is exposed, which could help attackers identify server vulnerabilities.
+- **Cookies Issues**
+  - **Details**: Several cookies-related issues were identified, including cookies without HttpOnly flags, cookies without Secure flags, and cookies without SameSite attributes, leading to potential security vulnerabilities.
+- **Cross-Domain JavaScript Source File Inclusion**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Inclusion of cross-domain JavaScript files, which can potentially include malicious sources.
+
+### Informational:
+- **Modern Web Application**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: The site is identified as a modern web application.
+- **Session Management Response Identified**
+  - **URL**: `https://www.iwk.com.my`
+  - **Details**: Standard session management is in use.
+- **Information Disclosure - Suspicious Comments**
+  - **URL**: `https://www.iwk.com.my/compiledjs/jquery-1-9631852.js`
+  - **Details**: Suspicious comments found in JavaScript code, which could disclose sensitive information.
+
+This comprehensive analysis helps us to understand the security posture of the IWK website and guide the necessary steps to mitigate these vulnerabilities.
 
 ## Evaluate Vulnerabilities:
 [Provide an evaluation of the vulnerabilities identified.]
