@@ -87,7 +87,55 @@ This comprehensive analysis helps us to understand the security posture of the I
 [Provide an evaluation of the vulnerabilities identified.]
 
 ## Prevent Vulnerabilities:
-[Recommendations and measures to prevent the identified vulnerabilities.]
+The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
+
+### Medium Risk:
+1. **CSP: Wildcard Directive**
+   - **Recommendation:** Update the Content Security Policy (CSP) to specify allowed sources explicitly, avoiding the use of wildcard directives. Implement a strict CSP policy that only allows trusted sources for scripts, styles, and other resources.
+   
+2. **CSP: script-src unsafe-inline**
+   - **Recommendation:** Remove the allowance for inline scripts in the CSP policy. Instead, refactor the code to use external script files and implement nonce-based CSP to allow specific inline scripts when necessary.
+
+3. **CSP: style-src unsafe-inline**
+   - **Recommendation:** Similar to scripts, eliminate the use of inline styles and rely on external style sheets. Implementing nonce-based CSP can provide a mechanism for allowing specific inline styles securely.
+
+4. **Cross-Domain Misconfiguration**
+   - **Recommendation:** Configure Cross-Origin Resource Sharing (CORS) headers to restrict access to resources only from trusted domains. Use the `Access-Control-Allow-Origin` header to specify allowed origins explicitly.
+
+5. **Secure Pages Include Mixed Content**
+   - **Recommendation:** Ensure that all resources loaded on secure pages (HTTPS) are also served securely. Update the website to use HTTPS for all resources, including external scripts, stylesheets, and images.
+
+6. **Vulnerable JS Library**
+   - **Recommendation:** Update the jQuery library to the latest secure version or consider using a more secure alternative. Regularly monitor for security updates and apply patches promptly to mitigate known vulnerabilities.
+
+7. **Absence of Anti-CSRF Tokens**
+   - **Recommendation:** Implement anti-CSRF tokens in web forms to prevent cross-site request forgery attacks. Include unique tokens with each form submission and validate them on the server-side to ensure requests originate from legitimate users.
+
+### Low Risk:
+1. **Strict-Transport-Security Header Not Set**
+   - **Recommendation:** Enable HTTP Strict Transport Security (HSTS) by configuring the server to include the `Strict-Transport-Security` header in HTTP responses. Set the `max-age` directive to a sufficient duration to enforce HTTPS for all subsequent requests.
+
+2. **Server Leaks Version Information via "Server" HTTP Response Header Field**
+   - **Recommendation:** Configure the server to suppress or obfuscate version information from the HTTP response headers. Minimize exposure of server details to reduce the risk of targeted attacks.
+
+3. **Cookies Issues**
+   - **Recommendation:** Address cookies-related issues by setting appropriate flags such as HttpOnly, Secure, and SameSite attributes based on the sensitivity of the cookies. Ensure that session cookies are secure and transmitted over HTTPS only.
+
+4. **Cross-Domain JavaScript Source File Inclusion**
+   - **Recommendation:** Review and validate the inclusion of cross-domain JavaScript files. Whenever possible, host JavaScript files locally or from trusted CDNs to reduce the risk of tampering or injection attacks.
+
+### Informational:
+1. **Modern Web Application**
+   - **Recommendation:** Continuously update the website's technology stack and adhere to modern security best practices to maintain the security posture of the application.
+
+2. **Session Management Response Identified**
+   - **Recommendation:** Implement secure session management practices, including session expiration, session regeneration, and secure storage of session identifiers to prevent session hijacking and unauthorized access.
+
+3. **Information Disclosure - Suspicious Comments**
+   - **Recommendation:** Remove or obfuscate any suspicious comments or sensitive information present in JavaScript files. Minimize the exposure of internal code comments and configuration details to external users.
+
+These recommendations aim to address the identified vulnerabilities and strengthen the security posture of the Indah Water Konsortium (IWK) website. It's essential to implement these preventive measures proactively and regularly assess the website's security to mitigate potential risks effectively.
+
 
 ## References
 
