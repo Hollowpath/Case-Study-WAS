@@ -95,4 +95,4 @@ This comprehensive analysis helps us to understand the security posture of the I
    - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/)
 
 2. [Detailed ZAP Scanning Report - MANUAL EXPLORE](https://drive.google.com/file/d/1qiC6JscSML1rPOu_M7OEpNdwWsGeF6FQ/view?usp=sharing)
-3. [[Detailed ZAP Scanning Report - AUTOMATIC SCANNING](https://drive.google.com/file/d/1tNKfsFedavBK5MpxAY5OYgTEtEjhGYJw/view?usp=sharing)
+3. [Detailed ZAP Scanning Report - AUTOMATIC SCANNING](https://drive.google.com/file/d/1tNKfsFedavBK5MpxAY5OYgTEtEjhGYJw/view?usp=sharing)
