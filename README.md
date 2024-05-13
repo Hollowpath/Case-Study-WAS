@@ -34,7 +34,7 @@ The objectives of this case study are to identify, evaluate, and prevent vulnera
 - **Server:** Apache (Educated Guess)
 - **Operating System:** Linux (Educated Guess)
   
-*Note: There are no explicit data or information that we can get to confirm the Server and Operating System that IWK is using. This educated guess hinted from the HTTP Response Headers in the generated ZAP scan report.*
+*Note: There are no explicit data or information that we can get to confirm the Server and Operating System that IWK is using. This educated guess is hinted from the HTTP Response Headers in the generated ZAP scan report.*
 
 ## Identify Vulnerabilities: (Bashir)
 The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
