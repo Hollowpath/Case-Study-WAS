@@ -31,10 +31,10 @@ Established in 1994, IWK plays a crucial role in managing the nation's sewerage 
 
 The objectives of this case study are to identify, evaluate, and prevent vulnerabilities present within the IWK website, using the OWASP ZAP tool and other relevant techniques. Through comprehensive analysis and recommendations, the aim is to enhance the security and integrity of the IWK online platform, safeguarding it against potential threats and ensuring uninterrupted service delivery to the public.
 
-- **Server:** Apache (Educated Guess)
-- **Operating System:** Linux (Educated Guess)
+- **Server:** Apache
+- **Operating System:** Linux
   
-*Note: There are no explicit data or information that we can get to confirm the Server and Operating System that IWK is using. This educated guess is hinted from the HTTP Response Headers in the generated ZAP scan report.*
+*Note: The server and operating system stated is just an educated guess. There are no explicit data or information that we can get to confirm the server and operating system that IWK is using. This educated guess is hinted from the HTTP Response Headers in the generated ZAP scan report.*
 
 ## Identify Vulnerabilities: (Bashir)
 The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
