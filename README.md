@@ -36,7 +36,7 @@ The objectives of this case study are to identify, evaluate, and prevent vulnera
   
 *Note: There are no explicit data or information that we can get to confirm the Server and Operating System that IWK is using. This educated guess hinted from the HTTP Response Headers in the generated ZAP scan report.*
 
-## Identify Vulnerabilities:
+## Identify Vulnerabilities: (Bashir)
 The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
 
 ### Medium Risk:
@@ -88,7 +88,7 @@ The security analysis performed using the OWASP ZAP tool revealed several vulner
 
 This comprehensive analysis helps us to understand the security posture of the IWK website and guide the necessary steps to mitigate these vulnerabilities.
 
-## Evaluate Vulnerabilities:
+## Evaluate Vulnerabilities: (Nazim)
 Based on the security analysis report of the IWK website, several vulnerabilities have been identified, categorized by their risk level. Here is an evaluation of the vulnerabilities:
 
 ### Medium Risk:
@@ -124,7 +124,7 @@ Based on the security analysis report of the IWK website, several vulnerabilitie
 
 Overall, the vulnerabilities identified in the report highlight potential security risks that should be addressed to enhance the security posture of the IWK website.
 
-## Prevent Vulnerabilities:
+## Prevent Vulnerabilities: (Faizal)
 The security analysis performed using the OWASP ZAP tool revealed several vulnerabilities within the IWK website, categorized by their risk level and confidence rating. Below is a summary of the key findings:
 
 ### Medium Risk:
